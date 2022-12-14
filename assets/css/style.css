@@ -1,4 +1,6 @@
-    /* CSS Code */
+    body {
+        background-color: lightgray;
+    }
     /* Heading */
     h1 {
         color: orangered;
