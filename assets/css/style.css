@@ -13,7 +13,7 @@
         width: 80px;
         height: 52px;
         margin: auto;
-        border: 1px solid gray;
+        border: 1px solid black;
         border-radius: 6px;
         font-size: 30px;
         text-align: center;
@@ -27,10 +27,8 @@
         border: 1px solid dodgerblue;
         margin: auto;
         border-radius: 4px;
-        font-family: Verdana,
-            Geneva, Tahoma, sans-serif;
- 
-        background-color: dodgerblue;
+        font-family: Verdana,Geneva, Tahoma, sans-serif; 
+        background-color: royalblue;
         color: white;
         font-size: 20px;
         cursor: pointer;
@@ -50,9 +48,7 @@
  
     /* Game Instruction Text */
     #ins {
-        font-family: Verdana,
-            Geneva, Tahoma, sans-serif;
-             
+        font-family: Verdana,Geneva, Tahoma, sans-serif;             
         color: dodgerblue;
         font-size: 17px;
     }
