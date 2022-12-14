@@ -36,15 +36,13 @@
  
     /* Player turn space */
     #print {
-        font-family: Verdana,
-            Geneva, Tahoma, sans-serif;
- 
+        font-family: Verdana,Geneva, Tahoma, sans-serif;
         color: dodgerblue;
         font-size: 20px;
     }
  
     /* Main Container */
-    #main {
+    #gameboard {
         text-align: center;
     }
  
