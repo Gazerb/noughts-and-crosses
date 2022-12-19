@@ -16,7 +16,7 @@ function handleCellPlayed() {
 function handlePlayerChange() {
 
 }
-function handleResultValidation() {
+function result() {
 
 }
 function handleCellClick() {
@@ -40,7 +40,7 @@ function handleCellClick(clickedCellEvent) {
         return;
     }
     handleCellPlayed(clickedCell, clickedCellIndex);
-    handleResultValidation();
+    result();
 }
 
 function handleCellPlayed(clickedCell, clickedCellIndex) {
@@ -66,7 +66,7 @@ const winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-function handleResultValidation() {
+function result() {
     let roundWon = false;
     for (let i = 0; i <= 7; i++) {
         const winCondition = winningConditions[i];
