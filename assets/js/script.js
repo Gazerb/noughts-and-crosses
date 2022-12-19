@@ -10,27 +10,27 @@ const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
-function handleCellPlayed() {
+function CellPlayed() {
 
 }
-function handlePlayerChange() {
+function PlayerChange() {
 
 }
 function result() {
 
 }
-function handleCellClick() {
+function CellClick() {
 
 }
-function handleRestartGame() {
+function RestartGame() {
 
 }
 
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
-document.querySelector('.game-restart').addEventListener('click', handleRestartGame);
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', CellClick));
+document.querySelector('.game-restart').addEventListener('click', RestartGame);
 
 
-function handleCellClick(clickedCellEvent) {
+function CellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
     const clickedCellIndex = parseInt(
         clickedCell.getAttribute('data-cell-index')
@@ -39,11 +39,11 @@ function handleCellClick(clickedCellEvent) {
       if (gameState[clickedCellIndex] !== "" || !gameActive) {
         return;
     }
-    handleCellPlayed(clickedCell, clickedCellIndex);
+    CellPlayed(clickedCell, clickedCellIndex);
     result();
 }
 
-function handleCellPlayed(clickedCell, clickedCellIndex) {
+function CellPlayed(clickedCell, clickedCellIndex) {
     gameState[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
 
@@ -94,15 +94,15 @@ if (roundWon) {
         return;
     }
 
-    handlePlayerChange();
+    PlayerChange();
 }
 
-function handlePlayerChange() {
+function PlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     statusDisplay.innerHTML = currentPlayerTurn();
 }
 
-function handleRestartGame() {
+function RestartGame() {
     gameActive = true;
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
