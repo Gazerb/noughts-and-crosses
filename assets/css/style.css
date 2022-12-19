@@ -6,15 +6,15 @@ section {
     text-align: center;
 }
 
-.game--title {
+.game-title {
     color: orangered;
 }
 
-.game--status {
+.game-status {
     color: orangered;
 }
 
-.game--container {
+.game-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 306px;
