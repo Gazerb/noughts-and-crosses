@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a04ed0f7dc.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <h1 class="game-title">Noughts and Crosses</h1>
+    </section>
+
+    <section>
+        <h5 class="padding-left padding-right text-c">Please fill out the form below and one of our team will be in touch to answer any queries you have.</h5>
+      <form class="contact-form padding-left padding-right padding-top">
+        <div class="form-row">
+          <div class="col-md-6 form-margin">
+          <label for="first-name">First Name:</label>
+          <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+        </div>
+          <div class="col-md-6 form-margin">
+          <label for="last-name">Last Name:</label>
+          <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+        </div>
+        </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 form-margin">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group col-md-6 form-margin">
+            <label for="quiery">Comments:</label>
+            <textarea class="form-control" id="quiery" rows="3"></textarea>
+          </div>
+          <div class="form-group submit text-center">
+            <button class="btn btn-primary" type="submit" id="popup" onclick="feedbackSubmitted()">Submit</button>
+          </div>
+        <div class="popup">
+            <h2><i class="fa-solid fa-circle-check"></i></h2>
+            <h2>Thank you!</h2>
+            <p>Your feedback has been received.</p>
+            <button type="button" onclick="feedbackClosed()">OK</button>
+        </div>
+    </section>
+    <!--   Imports the JavaScript code   -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>

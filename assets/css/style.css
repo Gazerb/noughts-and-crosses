@@ -54,3 +54,48 @@ section {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.feedback {
+    text-align: right;
+}
+
+.form-margin {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-border {
+    border: 5px solid #04C6D3;
+  }
+
+.popup {
+    width: 400px;
+    background-color: #04C6D3;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.feedback-open {
+    visibility: visible;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
