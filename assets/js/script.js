@@ -8,7 +8,7 @@ let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 
-// Stes the way in which the players can win
+// Sets the way in which the players can win
 const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
