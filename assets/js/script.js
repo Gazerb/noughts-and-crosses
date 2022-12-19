@@ -22,8 +22,8 @@ const winningConditions = [
 
 
 // Messages that will be displayed during the game
-const winningMessage = () => `Congrats, Player ${currentPlayer} has won! Click restart for a rematch`;
-const drawMessage = () => `Game ended in a draw! Click restart for a rematch`;
+const winningMessage = () => `Congrats, Player ${currentPlayer} has won! Click restart for a rematch.`;
+const drawMessage = () => `Game ended in a draw! Click restart for a rematch.`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
