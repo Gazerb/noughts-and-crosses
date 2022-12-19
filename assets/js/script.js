@@ -8,6 +8,19 @@ let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 
+// Stes the way in which the players can win
+const winningConditions = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+];
+
+
 // Messages that will be displayed during the game
 const winningMessage = () => `Congrats, Player ${currentPlayer} has won! Click restart for a rematch`;
 const drawMessage = () => `Game ended in a draw! Click restart for a rematch`;
@@ -74,17 +87,6 @@ function CellPlayed(clickedCell, clickedCellIndex) {
 }
 
 
-// Stes the way in which the players can win
-const winningConditions = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6]
-];
 
 // This function checks the result and then runs the correct function depending on that result
 function result() {
