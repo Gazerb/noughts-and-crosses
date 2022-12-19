@@ -1,61 +1,80 @@
+// This is the const we will use to change the display to match who's turn it is or the match result
 const statusDisplay = document.querySelector('.game-status');
 
+/* The below sets the game to active, sets the current player who will start the game and also sets our array to null as 
+this will change during the game depending on what each player clicks */
 let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 
+// Messages that will be displayed during the game
 const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
+
+
+// functions that will be used throughout the game
 function CellPlayed() {
 
 }
+
 function PlayerChange() {
 
 }
+
 function result() {
 
 }
+
 function CellClick() {
 
 }
+
 function RestartGame() {
 
 }
 
+// An event listener for the mouse click of each square on the game board
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', CellClick));
+
+// An event listener for if the user has clicked the restart button
 document.querySelector('.game-restart').addEventListener('click', RestartGame);
 
 
+
+// This function checks which aquare the user has clicked on the game board. It then runs the cellPlayed function
 function CellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
     const clickedCellIndex = parseInt(
         clickedCell.getAttribute('data-cell-index')
-      );
-    
-      if (gameState[clickedCellIndex] !== "" || !gameActive) {
+    );
+
+    if (gameState[clickedCellIndex] !== "" || !gameActive) {
         return;
     }
     CellPlayed(clickedCell, clickedCellIndex);
     result();
 }
 
+
+
+// This function fills out the cell that the user has selected with their player icon
 function CellPlayed(clickedCell, clickedCellIndex) {
     gameState[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
 
-    if ( currentPlayer == "X" ) { 
+    if (currentPlayer == "X") {
         document.querySelectorAll('.cell')[clickedCellIndex].style.color = "yellow";
-    }else{
+    } else {
         document.querySelectorAll('.cell')[clickedCellIndex].style.color = "red";
     }
 }
 
 
-
+// Stes the way in which the players can win
 const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -66,6 +85,8 @@ const winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
+
+// This function checks the result and then runs the correct function depending on that result
 function result() {
     let roundWon = false;
     for (let i = 0; i <= 7; i++) {
@@ -81,7 +102,7 @@ function result() {
             break
         }
     }
-if (roundWon) {
+    if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
         return;
@@ -97,16 +118,20 @@ if (roundWon) {
     PlayerChange();
 }
 
+
+// This is the player change function which changes the player after each turn
 function PlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     statusDisplay.innerHTML = currentPlayerTurn();
 }
 
+
+// This function will restart the game if the restart button is clicked
 function RestartGame() {
     gameActive = true;
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell')
-               .forEach(cell => cell.innerHTML = "");
+        .forEach(cell => cell.innerHTML = "");
 }

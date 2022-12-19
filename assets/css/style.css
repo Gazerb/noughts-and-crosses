@@ -1,11 +1,14 @@
+/* stylying for body and main section*/
 body {
     font-family: "Arial", sans-serif;
     background-color: black;
 }
+
 section {
     text-align: center;
 }
 
+/* Styling for title of website and game text display*/
 .game-title {
     color: orangered;
     font-size: 50px;
@@ -17,12 +20,15 @@ section {
     padding-bottom: 20px;
 }
 
+
+/* Styling for game board */
 .game-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 306px;
     margin: 50px auto;
 }
+
 .cell {
     font-family: "Permanent Marker", cursive;
     width: 100px;
@@ -34,6 +40,8 @@ section {
     font-size: 60px;
 }
 
+
+/* Button Styling */
 .button {
     background-color: orangered;
     color: greenyellow;
