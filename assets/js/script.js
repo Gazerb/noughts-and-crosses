@@ -137,13 +137,3 @@ function RestartGame() {
     document.querySelectorAll('.cell')
         .forEach(cell => cell.innerHTML = "");
 }
-
-let feedback = document.getElementById(".popup'");
-
-function feedbackSubmitted() {
-    feedback.classList.add("feedback-open");
-}
-
-function feedbackClosed() {
-    feedback.classList.remove("feedback-open");
-}
