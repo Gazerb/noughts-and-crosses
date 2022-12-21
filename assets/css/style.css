@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 /* stylying for body and main section*/
 body {
-    font-family: "Arial", sans-serif;
+    font-family: 'Play', sans-serif;
     background-color: black;
 }
 
@@ -12,6 +14,11 @@ section {
 .game-title {
     color: orangered;
     font-size: 50px;
+}
+
+.rules {
+    color: white;
+    text-align: center;
 }
 
 .game-status {

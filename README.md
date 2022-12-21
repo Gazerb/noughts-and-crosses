@@ -89,81 +89,44 @@ As this product is considered a interactive game and most users will be on a por
 
 #### Colour Scheme
 The colour scheme was chosen to be simple, clean, bright and visually appealing. Blue is thr traditional colour associated with sports centers with swimming pools so this was chosen along eith white as this is a clean color. Black was chosen for the text and related icons
-<img src="documentation/readme-images/peakmotion-colour-palette.png" height="auto" width="100%" alt="Image of colour palette showing colours used in website" />
+<img src="documentation/readme-images/noughts-and-crosses-colour.png" height="auto" width="100%" alt="Image of colour palette showing colours used in website" />
 
 <sub>*Colour palette created at* [coolors.co](https://coolors.co/7ae9f0-04c6d3-fafafa-0420d4-000000).</sub>
 
 <ul>
-    <li>#7AE9F0 / Electric Blue. A nice bright color chosen for the navigation bar</li>
-    <li>#04D6C3 / Dark Turquoise. A darker shade of blue chosen for the footer. It was also chosen to highlight the active page the user is on</li>
-    <li>#0420D4 / Medum Blue. Chosen for the social icons in the footer to make them stand out. It is also the colour that shows when you hover over a page in the navigation bar</li>
+    <li>#FF5349 / Orangered. A nice bright color chosen for the title and background of the restart button.</li>
+    <li>#ADFF2F / Greenyellow. Another bright color used for the display text below the gameboard and for the text in the restart button.</li>
+    <li>#FFFF00 / Yellow. Chosen as the colour of player X.</li>
+    <li>#FF0000 / Red. Chosen as the colour of player O.</li>
+    <li>#000000 / Black. Chosen as the background for the application to help make the brighter colours stand out more.</li>
 </ul>
 
 #### Icons
-Icons were used alongside teat to help the user understand sections of the website at a glance. I have taken the icons used in this project from Font Awesome (https://fontawesome.com/).
+Icons were used on this product to help improve the visual aspect and to help appeal to all ages. I used them from Font Awesome. (https://fontawesome.com/).
 
 #### Typography
-After some research, I found that the 4th most common font used on gym and sports websites is Monserrat. I decided to go with the 4th most used as i wanted this website to be similar but also slightly different, This font was used for the logo and navigation bar. Google fonts recommended Roberto as a secondary font so this was used for the body of the website.
+After some research, I found that the clearest font to use was 'play'. This was taken from google fonts and imported onto the style sheet and set to the boyd of the website.
 
 
 ## Development
-During a mentor session it was advised to me that when in tablet mode I should have a drop down hamburger menu similar to when in mobile mode. This will help the website with responsiveness and look more professional. 
-
-I was also advised during the same session to change the layout to only show two images per row. This would mean the the responsiveness of the website would be better and the images would not appear stretched or pixelated.
-
-
-### Site Map
-<img src="documentation/readme-images/site-map.PNG" height="auto" width="100%" alt="Image of websites site map." />
+Orginally the layout of the product was for the gameboard to be on the left of the screen and game display text on the right but during a mentor session i was advised that with mobile-first being the approach to change the layout to suit that device as this would more than likely be a game played on mobile devices and less likely to be desktop.
 
 
 ## Features
-### Consistent features on all pages
+### Main Features
 <ul>
-    <li>Title, displaying on the webpages tab is the title of the website</li>
-    <li>Header, contains the same company logo and navigation bar</li>
-    <li>Footer, Contains company address, contact number, email, opening times and social links</li>
-</ul>
-
-### Features per page
-Index:
-<ul>
-    <li>Hero Image - to improve the look of the website</li>
-    <li>Images of the gym, pool and fitness classes with links to relevant pages</li>
-</ul>
-
-Gym.html:
-<ul>
-    <li>Images of the gym facility</li>
-</ul>
-
-Pool.html:
-<ul>
-    <li>Images of the pool facility</li>
-</ul>
-
-Fitness-classes.html:
-<ul>
-    <li>Images of different taking place in our facility</li>
-</ul>
-
-Gallery.html:
-<ul>
-    <li>3 sections containing images of the gym, pool and fitness classes</li>
-    <li>Video of a fitness class taking place</li>
-</ul>
-
-Contact-us.html:
-<ul>
-    <li>Full screen contact form to get in touch with any quieries.</li>
+    <li>Clickable gameboard to allow the players to select the square of their choice</li>
+    <li>Game status text show either who's turn it is or the game result</li>
+    <li>Game restart button</li>
 </ul>
 
 
 ## Future Features
 <ul>
-    <li>Online membership sign up with payment option</li>
-    <li>Online class timetable</li>
-    <li>To be able to book a class online through membership</li>
-    <li>Online facility reviews</li>
+    <li>Add an AI so a user can play against a computer.</li>
+    <li>Add the ability for the user to sign up to the site.</li>
+    <li>Add online play so users can play people from all over the world.</li>
+    <li>Add a score to a user account and create an online scoreboard.</li>
 </ul>
 
 
@@ -172,13 +135,13 @@ The below languages were used in this project:
 <ul>
     <li>HTML</li>
     <li>CSS</li>
-    <li>JavaScript - Imported from Bootstrap and used for the hamburger menu</li>
+    <li>JavaScript</li>
 </ul>
 
 ## websites used
 <ul>
     <li>Am I Responsive (http://ami.responsivedesign.is/). This was used to create the mock up image at the top of this readme document</li>
-    <li>Bootstrap (https://getbootstrap.com/). Used for website layout, responsiveness and hamburger menu</li>
+    <li>Bootstrap (https://getbootstrap.com/). Used for website layout, responsiveness.</li>
     <li>Code Institute (https://codeinstitute.net/). Modules and walk-through projects have been used and copied in this project</li>
     <li>Coolors (https://coolors.co/7ae9f0-04c6d3-fafafa-0420d4-000000). Used to create website colour scheme and palette</li>
     <li>Font Awesome (https://fontawesome.com/). Used for icons within website</li>
@@ -192,26 +155,30 @@ The below languages were used in this project:
     <li>Figma. Used to create websites wireframes</li>
 </ul>
 
+The below websites and videos were used to help code this project. Code was copied and edited to suit this product:
+<ul>
+    <li>https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/</li>
+    <li>https://github.com/javascriptacademy-stash/tic-tac-toe</li>
+    <li>https://www.youtube.com/watch?v=YcKOqthpN2M&t=3s</li>
+    <li>https://dev.to/bornasepic/pure-and-simple-tic-tac-toe-with-javascript-4pgn</li>
+</ul>
+
 ## Performance Testing
 ### Lighthouse testing
-I used the chrome extension 'Lighthouse' to test the performance of the website. Below is the capture of my first report which came back with a performance of 72 and to re size the images would improve performance which was what i then went on to do.
+I used the chrome extension 'Lighthouse' to test the performance of the website. Below is the capture of my first report which came back with a performance of 99.
 
-<img src="documentation/readme-images/first-lighthouse-report.png" height="auto" width="100%" alt="First Lighthouse Report." />
-
-After changing the images the new light house report showed an increase to 78.
+<img src="documentation/readme-images/noughts-and-crosses-lighthouse.png" height="auto" width="100%" alt="First Lighthouse Report." />
 
 
 ### W3C HTML Validator
-From first running the HTML validator it came up with errors of div elements not being closed. Getting rid of closing tags with links in them that wasn't required.
-
-The required changes have been made and there are now no HTML validator errors accross the website.
+No erroros on the HTML validator. There has been a warning of an empty header but our JavaScript code changes the header as it is the display test.
 
 ### W3C CSS Validator
-No error where found in the CSS code when that went through the validator so nothing was changed there.
+No errors where found in the CSS code when that went through the validator so nothing was changed there.
 
 
 ## Manual Testing
-The website was tested on the following browsers:
+The application was tested on the following browsers:
 <ul>
     <li>Google Chrome - Version 106.0.5249.91</li>
     <li>Safari on iPhone</li>
@@ -220,11 +187,11 @@ The website was tested on the following browsers:
     <li>Firefox - Version 105.01</li>
 </ul>
 
-All browsers where tested fully and the website behaved as expected on them
+All browsers where tested fully and the application behaved as expected on them
 
 
 ## Device & responsiveness testing
-The below devices where tested to see how the website behaved on them and their responsiveness using Google Developer Chrome tools.
+The below devices where tested to see how the application behaved on them and their responsiveness using Google Developer Chrome tools.
 
 <ul>
     <li>iPhone SE</li>
@@ -249,23 +216,9 @@ It was also tested on the below laptop and desktop sizes:
 Below I will discuss how the project met the requirements of the user stories from earlier.
 
 #### New User
-So for a new user of the sports center they needed to be able to find out the below:
-<ul>
-    <li>Sports center location</li>
-    <li>Sports center opeing times</li>
-    <li>Facilities available</li>
-    <li>Costs</li>
-    <li>Be able to contact the gym</li>
-</ul>
-
-Both the location and opening times can be found at the footer at the bottom of every page in the website. Our facilities available are listed on the home page and each have their own individual page where you can also see the costs of using that facility and you can contact the gym via our contact us page.
+We have already met one of the needs for a new user by having the application online. The game was created to be very simple to use and has since had the rules added above the gameboard to help new users.
 
 <img src="documentation/readme-images/contact-form.PNG" height="auto" width="100%" alt="Contact form" />
-<img src="documentation/readme-images/gym-pool-fit.PNG" height="auto" width="100%" alt="Facility pages on nav bar" />
-<img src="documentation/readme-images/gym-page.png" height="auto" width="100%" alt="Gym Page" />
-<img src="documentation/readme-images/fitness-page.png" height="auto" width="100%" alt="Fitness classes page" />
-<img src="documentation/readme-images/pool-page.png" height="auto" width="100%" alt="Pool Page" />
-<img src="documentation/readme-images/footer.PNG" height="auto" width="100%" alt="Website footer" />
 
 
 #### Returning User
