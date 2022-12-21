@@ -218,60 +218,18 @@ Below I will discuss how the project met the requirements of the user stories fr
 #### New User
 We have already met one of the needs for a new user by having the application online. The game was created to be very simple to use and has since had the rules added above the gameboard to help new users.
 
-<img src="documentation/readme-images/contact-form.PNG" height="auto" width="100%" alt="Contact form" />
-
-
-#### Returning User
-A returning user needed the below information from the website:
-<ul>
-    <li>Find the sports center opening times</li>
-    <li>Contact the sports center and make an equiry</li>
-</ul>
-
-<img src="documentation/readme-images/footer.PNG" height="auto" width="100%" alt="Website Footer" />
-<img src="documentation/readme-images/contact-form.PNG" height="auto" width="100%" alt="Contact form" />
-
-Again the opeing times and contact details can be found in the footer of every page for this project and the buisness can be contacted via the contact form on the contact us page.
-
-#### Former User
-A former user needed to find the below information from the website:
-<ul>
-    <li>find opening times</li>
-    <li>Facilities on offer</li>
-    <li>Contact and make an equiry</li>
-</ul>
-
-These have been met with the opening times and contact information being in the footer. A contact form on the contact us page and each facility having its own page and being listed on the home page.
-
-<img src="documentation/readme-images/footer.PNG" height="auto" width="100%" alt="Website footer" />
-<img src="documentation/readme-images/contact-form.PNG" height="auto" width="100%" alt="Contact form" />
-<img src="documentation/readme-images/gym-pool-fit.PNG" height="auto" width="100%" alt="Facility pages on nav bar" />
-<img src="documentation/readme-images/gym-page.png" height="auto" width="100%" alt="Gym Page" />
-<img src="documentation/readme-images/fitness-page.png" height="auto" width="100%" alt="Fitness classes page" />
-<img src="documentation/readme-images/pool-page.png" height="auto" width="100%" alt="Pool Page" />
+<img src="documentation/readme-images/rules.png" height="auto" width="100%" alt="Game rules" />
 
 
 #### Buisness Ower
-The buisness ower needed the following to be met:
-<ul>
-    <li>Encourage people to us the facilities</li>
-    <li>Clearly display informaition about the buisness</li>
-    <li>visitors to the site to be able to contact the buisness</li>
-    <li>Encourage visitors to the website to follow the buisnesses social pages</li>
-</ul>
 
-I believe that all these have been met. Each facilities has its own page with images and information detailing and showing how state of the art they are. Visitors to the site can contact the buisness via the contact form on the contact us page or from the contact information within the footer. It also has the social links within the footer advertising that the buisness also has social media pages.
+I believe that all these have been met. We added in a font from google fonts that helps with clarity and also has a retro style to it. With the game being fully interactive and the ability to restart once completed i believe we have also met the second point for the buisness owner.
 
-<img src="documentation/readme-images/contact-form.PNG" height="auto" width="100%" alt="Contact form" />
-<img src="documentation/readme-images/gym-pool-fit.PNG" height="auto" width="100%" alt="Facility pages on nav bar" />
-<img src="documentation/readme-images/gym-page.png" height="auto" width="100%" alt="Gym Page" />
-<img src="documentation/readme-images/fitness-page.png" height="auto" width="100%" alt="Fitness classes page" />
-<img src="documentation/readme-images/pool-page.png" height="auto" width="100%" alt="Pool Page" />
-<img src="documentation/readme-images/socials.PNG" height="auto" width="100%" alt="Social Links" />
+<img src="documentation/readme-images/home-page.png" height="auto" width="100%" alt="Home page" />
 
 
 ## Bugs
-The only but I gound with this project was related to the hamberger menu. It would close imediately after opening it. I found the answer here (https://stackoverflow.com/questions/36110757/navbar-toggle-button-opens-then-immediately-closes#comment89727513_51377904). Turns out I needed to add thhe relevent bootstrap script to help make things work correctly.
+The only but I found with this project was getting the squares to fill out once clicked but after reading y code it turned out to be a spleeing error within the code that has now been corrected and is working.
 
 
 ## Deployment
@@ -296,53 +254,11 @@ To find the website once it has been deployed you need to:
 
 
 ## Credits
-The following was used from Boostrap and configured to suit this project:
+The following was used and configured to suit this project:
 <ul>
-    <li>Navigation bar</li>
-    <li>Hamburger menu</li>
-    <li>Layout of the site</li>
-</ul>
-
-## Media Used in this Project
-### Home page
-<ul>
-    <li>https://www.pexels.com/photo/an-on-treadmill-1954524/ - home page gym Photo</li>
-    <li>https://www.pexels.com/photo/grayscale-photo-of-man-standing-beside-barbell-3112004/ - Hero Image</li>
-    <li>https://www.pexels.com/photo/swimming-pool-with-lane-markers-in-blue-water-6110593/ - home page swimming pool photo</li>
-    <li>https://www.pexels.com/photo/woman-in-blue-sports-bra-and-white-leggings-doing-yoga-3822166/ - home page fitness class photo</li>
-</ul>
-
-### Gym Page
-<ul>
-    <li>https://www.pexels.com/photo/man-lying-while-doing-barbell-2204196/</li>
-    <li>https://www.pexels.com/photo/weights-at-a-gym-4162485/</li>
-    <li>https://www.pexels.com/photo/silver-dumbbells-on-black-steel-rack-4164766/</li>
-</ul>
-
-### Pool Page
-<ul>
-    <li>https://www.pexels.com/photo/people-doing-swim-race-1263349/ </li>
-    <li>https://www.pexels.com/photo/relaxation-water-sport-wet-2062708/</li>
-    <li>https://www.pexels.com/photo/athlete-exercise-fitness-leisure-261185/ </li>
-</ul>
-
-### Fitness classes page
-<ul>
-    <li>https://www.pexels.com/photo/group-of-women-doing-exercise-inside-the-building-3775566/</li>
-    <li>https://www.pexels.com/photo/women-in-sports-bras-and-leggings-doing-yoga-3822356/</li>
-    <li>https://www.pexels.com/photo/young-ethnic-woman-with-fit-ball-sitting-on-floor-while-training-in-modern-gym-3768593/ </li>
-</ul>
-
-### Gallery
-<ul>
-    <li>https://www.pexels.com/photo/man-lying-while-doing-barbell-2204196/</li>
-    <li>https://www.pexels.com/photo/weights-at-a-gym-4162485/</li>
-    <li>https://www.pexels.com/photo/silver-dumbbells-on-black-steel-rack-4164766/</li>
-    <li>https://www.pexels.com/photo/people-doing-swim-race-1263349/ </li>
-    <li>https://www.pexels.com/photo/relaxation-water-sport-wet-2062708/</li>
-    <li>https://www.pexels.com/photo/athlete-exercise-fitness-leisure-261185/ </li>
-    <li>https://www.pexels.com/photo/group-of-women-doing-exercise-inside-the-building-3775566/</li>
-    <li>https://www.pexels.com/photo/women-in-sports-bras-and-leggings-doing-yoga-3822356/</li>
-    <li>https://www.pexels.com/photo/young-ethnic-woman-with-fit-ball-sitting-on-floor-while-training-in-modern-gym-3768593/ </li>
-    <li>https://www.pexels.com/video/fitness-trainer-in-a-class-6326953/ - Fitness class video</li>
+    <li>https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/</li>
+    <li>https://github.com/javascriptacademy-stash/tic-tac-toe</li>
+    <li>https://www.youtube.com/watch?v=YcKOqthpN2M&t=3s</li>
+    <li>https://dev.to/bornasepic/pure-and-simple-tic-tac-toe-with-javascript-4pgn</li>
+    <li>I also used Boostrap within this project to help with layout.</li>
 </ul>
