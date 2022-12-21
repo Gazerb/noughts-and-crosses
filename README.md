@@ -229,7 +229,7 @@ I believe that all these have been met. We added in a font from google fonts tha
 
 
 ## Bugs
-The only but I found with this project was getting the squares to fill out once clicked but after reading y code it turned out to be a spleeing error within the code that has now been corrected and is working.
+The only bug I found with this project was getting the squares to fill out once clicked but after reading y code it turned out to be a spleeing error within the code that has now been corrected and is working.
 
 
 ## Deployment
