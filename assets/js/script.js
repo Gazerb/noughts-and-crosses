@@ -11,8 +11,8 @@ let gameState = ["", "", "", "", "", "", "", "", ""];
 let playerOne = 0;
 let playerTwo = 0;
 
-const playerOneScoreDisplay = () => `Player One: ${playerOne}`;
-const playerTwoScoreDisplay = () => `Player Two: ${playerTwo}`;
+const playerOneScoreDisplay = () => `Player X: ${playerOne}`;
+const playerTwoScoreDisplay = () => `Player O: ${playerTwo}`;
 
 playerOneScore.innerHTML = playerOneScoreDisplay();
 playerTwoScore.innerHTML = playerTwoScoreDisplay();
@@ -67,6 +67,9 @@ document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click'
 
 // An event listener for if the user has clicked the restart button
 document.querySelector('.game-restart').addEventListener('click', RestartGame);
+
+// An event listener for if the user has clicked change player
+document.querySelector('.change-player').addEventListener('click', PlayerChange);
 
 
 
