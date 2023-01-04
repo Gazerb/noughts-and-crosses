@@ -1,5 +1,7 @@
 // This is the const we will use to change the display to match who's turn it is or the match result
 const statusDisplay = document.querySelector('.game-status');
+const playerOneScore = document.querySelector('.player-one');
+const playerTwoScore = document.querySelector('.player-two');
 
 /* The below sets the game to active, sets the current player who will start the game and also sets our array to null as 
 this will change during the game depending on what each player clicks */
@@ -8,6 +10,12 @@ let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 let playerOne = 0;
 let playerTwo = 0;
+
+const playerOneScoreDisplay = () => `Player One: ${playerOne}`;
+const playerTwoScoreDisplay = () => `Player Two: ${playerTwo}`;
+
+playerOneScore.innerHTML = playerOneScoreDisplay();
+playerTwoScore.innerHTML = playerTwoScoreDisplay();
 
 
 
@@ -116,10 +124,12 @@ function result() {
 
         if (currentPlayer == 'X') {
             playerOne++;
+            playerOneScore.innerHTML = playerOneScoreDisplay();
         }
 
         if (currentPlayer == 'O') {
             playerTwo++;
+            playerTwoScore.innerHTML = playerTwoScoreDisplay();
         }
 
         return;
