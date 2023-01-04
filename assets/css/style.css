@@ -27,6 +27,17 @@ section {
     padding-bottom: 20px;
 }
 
+.score {
+    color: greenyellow;
+}
+.player-one {
+    color: white;
+}
+
+.player-two {
+    color: white;
+}
+
 
 /* Styling for game board */
 .game-container {
