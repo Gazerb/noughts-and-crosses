@@ -6,6 +6,10 @@ this will change during the game depending on what each player clicks */
 let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
+let playerOne = 0;
+let playerTwo = 0;
+
+
 
 
 // Sets the way in which the players can win
@@ -107,6 +111,17 @@ function result() {
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
+        console.log(playerOne);
+        console.log(playerTwo);
+
+        if (currentPlayer == 'X') {
+            playerOne++;
+        }
+
+        if (currentPlayer == 'O') {
+            playerTwo++;
+        }
+
         return;
     }
 
