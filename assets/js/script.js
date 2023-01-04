@@ -119,8 +119,6 @@ function result() {
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
-        console.log(playerOne);
-        console.log(playerTwo);
 
         if (currentPlayer == 'X') {
             playerOne++;
