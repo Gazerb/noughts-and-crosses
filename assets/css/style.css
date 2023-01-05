@@ -57,7 +57,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 306px;
-    margin: 50px auto;
+    margin: 20px auto;
 }
 
 .cell {
@@ -85,6 +85,7 @@ section {
     border-radius: 5px;
     cursor: pointer;
     margin-top:10px;
+    margin-bottom: 10px;
 }
 
 @media all and (max-width: 800px) {
