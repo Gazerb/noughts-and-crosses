@@ -118,11 +118,14 @@ Orginally the layout of the product was for the gameboard to be on the left of t
     <li>Clickable gameboard to allow the players to select the square of their choice</li>
     <li>Game status text show either who's turn it is or the game result</li>
     <li>Game restart button</li>
+    <li>Player Score area</li>
+    <li>Ability to change which player starts</li>
 </ul>
 
 
 ## Future Features
 <ul>
+    <li>Add addition game boards with different player icons so users can choose the board they want to play</li>
     <li>Add an AI so a user can play against a computer.</li>
     <li>Add the ability for the user to sign up to the site.</li>
     <li>Add online play so users can play people from all over the world.</li>
