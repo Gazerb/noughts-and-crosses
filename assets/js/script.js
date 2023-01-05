@@ -8,6 +8,10 @@ this will change during the game depending on what each player clicks */
 let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
+
+
+/* Below sets the start score for each player. It also sets the amount to a display function and then changes the HTML to 
+display the current score of each player */
 let playerOne = 0;
 let playerTwo = 0;
 
@@ -33,7 +37,8 @@ const winningConditions = [
 ];
 
 
-// Messages that will be displayed during the game
+/* Below sets the messages that will be displayed above our game board. They will show which players turn it is and then
+who has won the game once completed or draw if thats the result */
 const winningMessage = () => `Congrats, Player ${currentPlayer} has won! Click restart for a rematch.`;
 const drawMessage = () => `Game ended in a draw! Click restart for a rematch.`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
@@ -73,7 +78,7 @@ document.querySelector('.change-player').addEventListener('click', PlayerChange)
 
 
 
-// This function checks which aquare the user has clicked on the game board. It then runs the cellPlayed function
+// This function checks which square the user has clicked on the game board. It then runs the cellPlayed function
 function CellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
     const clickedCellIndex = parseInt(

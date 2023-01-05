@@ -10,12 +10,15 @@ section {
     text-align: center;
 }
 
+
 /* Styling for title of website and game text display*/
 .game-title {
     color: orangered;
     font-size: 50px;
 }
 
+
+/* Styling so the text at the top is centered and matches the style and layout of the overall product */
 .top {
     margin: auto;
     width: 50%;
@@ -33,6 +36,8 @@ section {
     padding-bottom: 20px;
 }
 
+
+/* Below is the styling for the area that will display the score for the game */
 .score-area {
     margin: auto;
     width: 15%;
@@ -42,6 +47,7 @@ section {
 .score {
     color: greenyellow;
 }
+
 .player-one {
     color: yellow;
 }
