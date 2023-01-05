@@ -1,4 +1,4 @@
-// This is the const we will use to change the display to match who's turn it is or the match result
+// This is the const we will use to change the display to match who's turn it is or the match result as well as each players score
 const statusDisplay = document.querySelector('.game-status');
 const playerOneScore = document.querySelector('.player-one');
 const playerTwoScore = document.querySelector('.player-two');
