@@ -18,7 +18,8 @@ section {
 }
 
 
-/* Styling so the text at the top is centered and matches the style and layout of the overall product */
+/* Styling so the text for the game rules and player turn/ match result
+is centered and matches the style and layout of the overall product */
 .top {
     margin: auto;
     width: 50%;
